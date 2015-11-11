@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sass-official
 //= require leaflet
 //= require 'leaflet.markercluster/dist/leaflet.markercluster-src.js'
 //= require_tree .
