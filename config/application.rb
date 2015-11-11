@@ -21,6 +21,10 @@ module RailsBootleaf
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.active_record.raise_in_transactional_callbacks = true
+    config.assets.enabled = true
+    config.assets.precompile += %w( .svg .eot .woff .ttf .woff2 .png)
+    config.assets.digest = false
+    config.cache_store = :memory_store, { size: 200.megabytes }
   end
 end
+
